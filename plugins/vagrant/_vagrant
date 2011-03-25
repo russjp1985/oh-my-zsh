@@ -65,7 +65,7 @@ __vagrant-box ()
        (options)
            case $line[1] in
                (repackage|remove)
-                   _arguments ':feature:__box_list' 
+                   _arguments ':feature:__box_list'
                ;;
            esac
        ;;
@@ -94,11 +94,6 @@ __vagrant-multi ()
        ;;
     esac
 }
-
-
-
-
-
 
 local expl
 local -a boxes installed_boxes
