@@ -1,5 +1,5 @@
 
-function repo_edit() { 
+function repo_edit() {
 
   if [[ -n $(pwd | grep "svn/system/apps/puppet-vagrant/modules/") ]]; then
       PKG="$(pwd | cut -d\/ -f 9)"
@@ -9,6 +9,8 @@ function repo_edit() {
        PKG="$(pwd | cut -d\/ -f 5)"
   elif [[ -n $(pwd | grep packages) ]]; then
       PKG="$(pwd | cut -d\/ -f 6)"
+  elif [[ -n $(pwd | grep "svn/projects") ]]; then
+      PKG="$(pwd | cut -d\/ -f 7)"
   elif [[ -n $(pwd | grep "russp/svn") ]]; then
       PKG="$(echo $REPO | cut -d\/ -f 5)"
   else
