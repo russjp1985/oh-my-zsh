@@ -4,3 +4,8 @@ log/.zsh_history
 projects.zsh
 custom/*
 !custom/example.zsh
+!custom/example
+!custom/example.zsh
+cache
+*.swp
+>>>>>>> 74be9a105da81e27bf95e183b98a3ec26e0e4bfc
